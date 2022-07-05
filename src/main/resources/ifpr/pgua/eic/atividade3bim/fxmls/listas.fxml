@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane xmlns="http://javafx.com/javafx/17" 
+          xmlns:fx="http://javafx.com/fxml/1" 
+          fx:controller="ifpr.pgua.eic.atividade3bim.telas.Listas"
+          fx:id="rootPane"
+          >
+   <children>
+      <VBox>
+         <Label text="Carros"/>
+         <ListView fx:id="lstCarros" onMouseClicked="#atualizarRemoverCarro"/>
+      </VBox>
+      
+   </children>
+</FlowPane>
