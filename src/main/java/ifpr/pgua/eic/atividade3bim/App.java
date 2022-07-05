@@ -15,20 +15,15 @@ import ifpr.pgua.eic.atividade3bim.repositorios.RepositorioCarros;
 import ifpr.pgua.eic.atividade3bim.telas.Home;
 import ifpr.pgua.eic.atividade3bim.utils.FabricaConexoes;
 
-/**
- * JavaFX App
- */
+
 public class App extends Application {
 
     FabricaConexoes fabricaConexoes = FabricaConexoes.getInstance();
 
     
-    //DESCOMENTAR PARA RESOLVER O EXERCÍCIO
+   
     CarroDAO carroDAO = new JDBCarroDAO(fabricaConexoes);
 
-    //COMENTAR PARA RESOLVER O EXERCÍCIO
-    //CarroDAO carroDAO = new FakeCarroDao();
-    
     RepositorioCarros repositorio = new RepositorioCarros(carroDAO);
 
 
